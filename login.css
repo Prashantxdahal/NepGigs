@@ -1,10 +1,10 @@
-main {
+.main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Segoe UI';
   background-color: #f2f2f2;
 }
@@ -103,7 +103,9 @@ input[type="password"] {
 }
 
 .right-panel {
-  flex: 1;
-  background-image: url('Login.png');
-  background-position: center;
+  flex: 0.75;
+  background-image: url('images/Login.png');
+  height: auto;
+  width: auto;
+  /* background-position: center; */
 }

@@ -247,7 +247,48 @@ const GigCarousel1 = () => (
 
 // Footer
 
-
+const Footer = () => {
+  return (
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="footer-column">
+          <p className="footer-heading">Categories</p>
+          <a href="#">UGC</a>
+          <a href="#">Marketing</a>
+          <a href="#">Graphic Design</a>
+          <a href="#">Web</a>
+          <a href="#">Writing</a>
+          <a href="#">Business</a>
+          <a href="#">Video & Photography</a>
+          <a href="#">Programs</a>
+        </div>
+        <div className="footer-column">
+          <p className="footer-heading">About</p>
+          <a href="#">Our Instructors</a>
+          <a href="#">Our Courses</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Nepgigs Privacy Policy</a>
+          <a href="#">Nepgigs.com</a>
+        </div>
+        <div className="footer-column">
+          <p className="footer-heading">Support</p>
+          <a href="#">FAQ</a>
+          <a href="#">Contact Support</a>
+        </div>
+        <div className="footer-column">
+          <p className="footer-heading">Share</p>
+          <div className="footer-social">
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="#"><i className="fab fa-linkedin"></i></a>
+          </div>
+          <a href="#">Become a Seller</a>
+          <a href="#">Become Buyer</a>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 const DiscoverPage = () => {
   return (

@@ -16,7 +16,17 @@ const ForgetPassword = () => {
   
   return (
     <div className="reset-container">
-      
+      <div className="reset-left">
+        <img src={resetImage} alt="Reset Password" />
+      </div>
+      <div className="reset-right">
+        <h2>Reset Password</h2>
+        <label>New Password</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <ul className="password-rules">
           <li className={passwordChecks.length ? "valid" : ""}>
             {passwordChecks.length ? "✅" : "⭕"} At least 8 characters

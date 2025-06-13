@@ -29,41 +29,7 @@ const Header = () => {
     </header>
   );
 };
-const AccountSettingsForm = () => {
-  return (
-    <div className="account-settings-container">
-      <aside className="account-sidebar">
-        <div className="sidebar-section">
-          <p className="sidebar-active">Account</p>
-          <p className="sidebar-inactive">Security</p>
-        </div>
-      </aside>
 
-      <section className="account-form-section">
-        <div className="account-form-box">
-          <p className="form-note">
-            Need to update your public profile?{" "}
-            <a href="#" className="go-profile-link">
-              Go to My Profile
-            </a>
-          </p>
-
-          <form className="form-fields">
-            <label htmlFor="fullname">FULL NAME</label>
-            <input type="text" id="fullname" value="Chirag" readOnly />
-
-            <label htmlFor="email">EMAIL</label>
-            <input type="email" id="email" value="u*****i@gmail.com" readOnly />
-
-            <button className="update-btn" type="submit">
-              Update
-            </button>
-          </form>
-        </div>
-      </section>
-    </div>
-  );
-};
 
 const AccountSetting = () => {
   return (

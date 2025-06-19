@@ -107,6 +107,15 @@ const MainContent = () => {
         </div>
       </section>
 
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>How Nepgigs Works</h1>
+        <p>
+          Connect with talented freelancers or start your freelancing journey in
+          just few simple steps
+        </p>
+      </section>
+
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import "../../Style/HowItWorks.css"; 
+import React from "react";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import "../../Style/HowItWorks.css";
 import image from "../../assets/logo.png"; // logo image
 
 // Reusable step card
@@ -45,9 +45,15 @@ const Footer = () => {
         <div className="footer-column">
           <p className="footer-heading">Share</p>
           <div className="footer-social">
-            <a href="#"><i className="fab fa-facebook"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-linkedin"></i></a>
+            <a href="#">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
           <a href="#">Become a Seller</a>
           <a href="#">Become Buyer</a>
@@ -63,7 +69,7 @@ const MainContent = () => {
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
   } = useForm();
 
   const onSubmit = (data) => {
@@ -79,7 +85,28 @@ const MainContent = () => {
           <img src={image} alt="NepGigs Logo" className="logo" />
         </div>
 
-       
+        <div className="navbar-center">
+          <Link to="/discover" className="nav-link">
+            Discover
+          </Link>
+          <Link to="/freelance" className="nav-link">
+            Freelances Now
+          </Link>
+          <Link to="/how-it-works" className="nav-link active">
+            How It Works
+          </Link>
+          <Link to="/login" className="nav-link">
+            Login
+          </Link>
+        </div>
+
+        <div className="navbar-right">
+          <Link to="/signup">
+            <button className="join-button">join Now</button>
+          </Link>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

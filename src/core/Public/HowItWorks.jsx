@@ -138,6 +138,28 @@ const MainContent = () => {
         </div>
       </section>
 
+      {/* For Freelancers */}
+      <section className="freelancers">
+        <h2>For Freelancers: Start Earning Today</h2>
+        <div className="steps">
+          <StepCard
+            number="1"
+            title="Create Your Profile"
+            description="Build a compelling profile showcasing your skills, experience, and portfolio. Add samples of your best work to attract clients."
+          />
+          <StepCard
+            number="2"
+            title="Create Gigs"
+            description="Create detailed gig listings for your services. Set competitive prices, clear deliverables, and turnaround times that work for you."
+          />
+          <StepCard
+            number="3"
+            title="Deliver & Earn"
+            description="Receive orders, communicated with clients, deliver high-quality work on time and get pay securely through our platform."
+          />
+        </div>
+      </section>
+
       <Footer />
     </>
   );

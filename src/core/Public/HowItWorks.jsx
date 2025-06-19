@@ -159,6 +159,21 @@ const MainContent = () => {
           />
         </div>
       </section>
+      {/* CTA */}
+      <section className="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>
+          Join thousands of successful freelancer and clients on NepGigs today
+        </p>
+        <div className="cta-buttons">
+          <Link to="/freelance">
+            <button className="start">Starts Freelancing</button>
+          </Link>
+          <Link to="/hire">
+            <button className="hire">Hire a Freelancer</button>
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </>

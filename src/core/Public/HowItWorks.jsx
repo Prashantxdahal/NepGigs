@@ -116,6 +116,28 @@ const MainContent = () => {
         </p>
       </section>
 
+      {/* For Clients */}
+      <section className="clients">
+        <h2>For Clients: Hire Expert Freelancers</h2>
+        <div className="steps">
+          <StepCard
+            number="1"
+            title="Post Your Project"
+            description="Describe your project requirements, set your budget, and timeline. Be specific about what you need to attract  right freelancers."
+          />
+          <StepCard
+            number="2"
+            title="Browse & Hire"
+            description="Review proposals from skilled freelancers, check their profiles, ratings, and previous work. Choose the perfect match for your project."
+          />
+          <StepCard
+            number="3"
+            title="Work with Freelancer"
+            description="Work directly with  chosen freelancer, track progress, and make secure payments through our platform when you're satisfied."
+          />
+        </div>
+      </section>
+
       <Footer />
     </>
   );

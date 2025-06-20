@@ -67,3 +67,25 @@ const GigDetailPage = () => {
             </div>
           </section>
         </div>
+         {/* Right Section */}
+        <aside className="gig-right">
+          <div className="pricing-card">
+            <h2 className="pricing-title">Basic Package</h2>
+            <ul className="package-features">
+              <li>✅ 5-page WordPress website</li>
+              <li>✅ Responsive design</li>
+              <li>✅ Basic SEO Setup</li>
+              <li>✅ Contact form</li>
+              <li>✅ Social media integration</li>
+              <li>✅ Blog Setup</li>
+            </ul>
+            <div className="price">NPR 15,000</div>
+            <button className="order-button">HIRE NOW</button>
+          </div>
+        </aside>
+      </main>
+    </div>
+  );
+};
+
+export default GigDetailPage;

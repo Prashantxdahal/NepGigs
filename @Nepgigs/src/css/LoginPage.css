@@ -1,0 +1,153 @@
+/* Global */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Wrapper */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Main Box */
+.login-box {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Left Side */
+.form-section {
+  flex: 1;
+  padding: 40px;
+  min-width: 300px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d1001f;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  color: #d1001f;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #222;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px;
+  background: #d1001f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Footer row */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  color: #d1001f;
+  text-decoration: none;
+}
+
+/* Login button */
+.login-submit {
+  margin-top: 20px;
+  padding: 10px;
+  background: #d1001f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Right Side - Image */
+.image-section {
+  flex: auto;
+  background: #d1001f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.image-section img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+  }
+
+  .image-section {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .image-section img {
+    border-radius: 0 0 20px 20px;
+  }
+}

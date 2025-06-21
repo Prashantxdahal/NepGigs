@@ -25,3 +25,16 @@ export default function GigPosting() {
 
       <div className="timeline-main">
         
+        <div className="timeline-main">
+        {/* Left Section */}
+        <div className="timeline-left">
+          <h1 className="timeline-heading">
+            Tell us about your timeline and budget...
+          </h1>
+          <p className="timeline-subtext">
+            This will help us match you with the right freelancers for your project.
+          </p>
+          <div className="timeline-image">
+            <img src={gigImage} alt="Gig Posting Illustration" />
+          </div>
+        </div>

@@ -56,5 +56,24 @@ const LandingPage = () => {
           <img src={Landing} alt="Hero Woman" />
         </div>
       </section>
-
       
+
+      <section className="popular">
+        <div className="popular-header">
+          <h2>Most Popular Services</h2>
+          <a href="#" className="view-all">View All ➜</a>
+        </div>
+        <div className="service-grid">
+          {services.map((s, idx) => (
+            <div key={idx} className="service-card">
+              <img src={s.image} alt={s.title} />
+              <h3>{s.title}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default LandingPage;

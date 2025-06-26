@@ -30,5 +30,31 @@ const LandingPage = () => {
           <button className="join-btn">Join Now</button>
         </nav>
       </header>
+      <section className="hero">
+        <div className="hero-content">
+          <h1>
+            Hire An Expert. <br /> Or Become One.
+          </h1>
+          <p className="subheading">Talent Marketplace Reimagined</p>
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder='Search To "Find Freelancers, Jobs, Or Services"'
+            />
+            <button className="search-btn">🔍</button>
+          </div>
+          <div className="trending">
+            <span>Trending Services</span>
+            <div className="tags">
+              <span className="tag">DESIGNER</span>
+              <span className="tag">Homework Help</span>
+              <span className="tag">WORDPRESS</span>
+            </div>
+          </div>
+        </div>
+        <div className="hero-image">
+          <img src={Landing} alt="Hero Woman" />
+        </div>
+      </section>
 
       

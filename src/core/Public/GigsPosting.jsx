@@ -63,43 +63,6 @@ const ReviewProject = () => {
         </div>
       </div>
 
-      <label>
-        Freelancer experience level
-        <select {...register("experienceLevel")}>
-          <option>Any Experience Level</option>
-          <option>Beginner</option>
-          <option>Intermediate</option>
-          <option>Expert</option>
-        </select>
-      </label>
-
-      <label>
-        Location preference
-        <select {...register("location")}>
-          <option>Nepal</option>
-          <option>Worldwide</option>
-        </select>
-      </label>
-
-      <label>
-        Additional requirements (optional)
-        <input
-          type="text"
-          placeholder="e.g. Must have portfolio, available for video calls, etc."
-          {...register("requirements")}
-        />
-      </label>
-
-      <div className="terms">
-        <input type="checkbox" {...register("agree", { required: true })} />
-        <span>
-          I agree to NepGigs <a href="#">Terms and Services</a> and{" "}
-          <a href="#">Privacy Policy</a>. I understand that I will be charged a
-          3% processing fee when I release payment to freelancers.
-        </span>
-      </div>
-      {errors.agree && <p className="error">You must agree to the terms.</p>}
-
       <button type="submit" className="submit-form">
         Publish
       </button>

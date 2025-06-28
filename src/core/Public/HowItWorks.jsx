@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "../../Style/HowItWorks.css";
-import image from "../../assets/logo.png"; // logo image
+import image from "../../assets/nepgigs.png"; // logo image
 
 // Reusable step card
 const StepCard = ({ number, title, description }) => (
@@ -82,7 +82,7 @@ const MainContent = () => {
       {/* Navbar */}
       <section className="navbar">
         <div className="navbar-left">
-          <img src={image} alt="NepGigs Logo" className="logo" />
+          <img src={image} alt="NepGigs Logo" className="project.png" />
         </div>
 
         <div className="navbar-center">
@@ -90,7 +90,7 @@ const MainContent = () => {
             Discover
           </Link>
           <Link to="/freelance" className="nav-link">
-            Freelances Now
+            Freelance Now
           </Link>
           <Link to="/how-it-works" className="nav-link active">
             How It Works
@@ -102,17 +102,17 @@ const MainContent = () => {
 
         <div className="navbar-right">
           <Link to="/signup">
-            <button className="join-button">join Now</button>
+            <button className="join-button">Join Now</button>
           </Link>
         </div>
       </section>
 
       {/* Hero Section */}
       <section className="hero">
-        <h1>How Nepgigs Works</h1>
+        <h1>How NepGigs Works</h1>
         <p>
           Connect with talented freelancers or start your freelancing journey in
-          just few simple steps
+          just a few simple steps
         </p>
       </section>
 
@@ -123,7 +123,7 @@ const MainContent = () => {
           <StepCard
             number="1"
             title="Post Your Project"
-            description="Describe your project requirements, set your budget, and timeline. Be specific about what you need to attract  right freelancers."
+            description="Describe your project requirements, set your budget, and timeline. Be specific about what you need to attract the right freelancers."
           />
           <StepCard
             number="2"
@@ -133,7 +133,7 @@ const MainContent = () => {
           <StepCard
             number="3"
             title="Work with Freelancer"
-            description="Work directly with  chosen freelancer, track progress, and make secure payments through our platform when you're satisfied."
+            description="Work directly with your chosen freelancer, track progress, and make secure payments through our platform when you're satisfied."
           />
         </div>
       </section>
@@ -155,19 +155,20 @@ const MainContent = () => {
           <StepCard
             number="3"
             title="Deliver & Earn"
-            description="Receive orders, communicated with clients, deliver high-quality work on time and get pay securely through our platform."
+            description="Receive orders, communicate with clients, deliver high-quality work on time, and get paid securely through our platform."
           />
         </div>
       </section>
+
       {/* CTA */}
       <section className="cta">
         <h2>Ready to Get Started?</h2>
         <p>
-          Join thousands of successful freelancer and clients on NepGigs today
+          Join thousands of successful freelancers and clients on NepGigs today
         </p>
         <div className="cta-buttons">
           <Link to="/freelance">
-            <button className="start">Starts Freelancing</button>
+            <button className="start">Start Freelancing</button>
           </Link>
           <Link to="/hire">
             <button className="hire">Hire a Freelancer</button>

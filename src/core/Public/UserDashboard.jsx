@@ -202,11 +202,56 @@ const NepGigsRequests = () => {
               </div>
 
               <h3 className="request-title">{request.title}</h3>
+
+              <div className="request-details">
+                <div className="detail-item">
+                  <span className="detail-label">BUDGET</span>
+                  <span className="detail-value budget-value">
+                    {request.budget}
+                  </span>
+                </div>
+                <div className="detail-item">
+                  <span className="detail-label">DEADLINE</span>
+                  <span className="detail-value">{request.deadline}</span>
+                </div>
+                <div className="detail-item">
+                  <span className="detail-label">REQUESTED</span>
+                  <span className="detail-value">{request.timeAgo}</span>
+                </div>
+              </div>
+
+              <div className="request-actions">
+                <button
+                  className="accept-btn"
+                  onClick={() => handleAccept(request.id)}
+                  {...register(`accept_${request.id}`)}
+                >
+                  ACCEPT
+                </button>
+                <button
+                  className="reject-btn"
+                  onClick={() => handleReject(request.id)}
+                  {...register(`reject_${request.id}`)}
+                >
+                  REJECT
+                </button>
+
+                {/* <button
+                  className="details-btn"
+                  onClick={() => handleViewDetails(request.id)}
+                  {...register(`details_${request.id}`)}
+                >
+                  VIEW DETAILS
+                </button>
+                </button> */}
+                <Link to="/View Details" className="nav-item">
+                  VIEW DETAILs
+                </Link>
+              </div>
             </div>
           ))}
         </div>
       </div>
-      ;
     </div>
   );
 };

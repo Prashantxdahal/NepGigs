@@ -108,7 +108,33 @@ const NepGigsRequests = () => {
           Find important messages, tips and links tohelpful resources here:
         </p>
       </div>
-      ;
+      {/* Stats Section */}
+      <div className="stats-section">
+        <div className="profile-card">
+          <div className="profile-avatar">SR</div>
+          <div className="profile-username">@seasonrai_087</div>
+          <button className="view-profile-btn">View Profile</button>
+        </div>
+
+        <div className="stats-grid">
+          <div className="stat-card">
+            <div className="stat-value">2</div>
+            <div className="stat-label">Active Projects</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">Rs.20,000</div>
+            <div className="stat-label">Total Spent</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">8</div>
+            <div className="stat-label">In Review</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-value">2</div>
+            <div className="stat-label">Completed</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -101,6 +101,14 @@ const NepGigsRequests = () => {
           <div className="user-avatar">S</div>
         </div>
       </header>
+      {/* Welcome Banner */}
+      <div className="welcome-banner">
+        <h1 className="welcome-title">Welcome, Season Rai 👋</h1>
+        <p className="welcome-subtitle">
+          Find important messages, tips and links tohelpful resources here:
+        </p>
+      </div>
+      ;
     </div>
   );
 };

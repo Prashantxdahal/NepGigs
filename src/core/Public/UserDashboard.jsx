@@ -135,6 +135,78 @@ const NepGigsRequests = () => {
           </div>
         </div>
       </div>
+      {/* Requests Section */}
+      <div className="requests-section">
+        <div className="requests-header">
+          <div className="tabs">
+            <button
+              className={`tab ${
+                activeTab === "Pending Requests (1)" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("Pending Requests (1)")}
+            >
+              Pending Requests (3)
+            </button>
+            <button
+              className={`tab ${
+                activeTab === "Active Gigs (1)" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("Active Gigs (1)")}
+            >
+              Active Gigs (1)
+            </button>
+            <button
+              className={`tab ${activeTab === "Completed" ? "active" : ""}`}
+              onClick={() => setActiveTab("Completed")}
+            >
+              Completed
+            </button>
+            <button
+              className={`tab ${activeTab === "All" ? "active" : ""}`}
+              onClick={() => setActiveTab("All")}
+            >
+              All
+            </button>
+          </div>
+
+          <div className="search-box">
+            <span className="search-icon">🔍</span>
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Search projects..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              {...register("search")}
+            />
+          </div>
+        </div>
+
+        {/* Request Cards */}
+        <div className="requests-list">
+          {filteredRequests.map((request) => (
+            <div key={request.id} className="request-card">
+              <div className="request-header">
+                <div className="client-info">
+                  <div
+                    className="client-avatar"
+                    style={{ backgroundColor: request.clientColor }}
+                  >
+                    {request.clientInitials}
+                  </div>
+                  <div className="client-details">
+                    <span className="client-name">{request.client}</span>
+                    <span className="time-ago">{request.timeAgo}</span>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="request-title">{request.title}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+      ;
     </div>
   );
 };

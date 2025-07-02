@@ -1,0 +1,165 @@
+/* Header Section */
+.account-header {
+  background-color: #ed1c24;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.account-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.account-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.account-nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.account-nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.account-nav-links a:hover {
+  color: #ffdada;
+}
+
+.account-right-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.account-icon {
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.account-icon:hover {
+  color: #ffdada;
+}
+
+.account-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #ed1c24;
+}
+.account-body {
+  padding-top: 80px; /* space for fixed header */
+  background-color: #f6f6f6;
+  min-height: 100vh;
+}
+
+.account-settings-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.account-sidebar {
+  width: 200px;
+  padding-right: 40px;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.sidebar-active {
+  color: #000;
+}
+
+.sidebar-inactive {
+  color: #999;
+  cursor: pointer;
+}
+
+.account-form-section {
+  flex: 1;
+}
+
+.account-form-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.form-note {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 24px;
+}
+
+.go-profile-link {
+  color: #ed1c24;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-fields label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin-top: 10px;
+}
+
+.form-fields input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f8f8f8;
+}
+
+.update-btn {
+  background-color: #ed1c24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100px;
+  align-self: flex-end;
+}
+
+.update-btn:hover {
+  background-color: #c4121a;
+}
+

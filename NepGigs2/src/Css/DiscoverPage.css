@@ -366,7 +366,7 @@
   margin-bottom: 6px;
 }
 
-.gig-rating span {
+.gig-rating1 span {
   color: #777;
 }
 
@@ -399,7 +399,7 @@
   background-color: #ccc;
 }
 
-.dot.active1 {
+.dot1.active {
   background-color: #1a73e8;
 }
 

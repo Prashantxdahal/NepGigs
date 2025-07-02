@@ -4,8 +4,6 @@ import "../../Css/DiscoverPage.css";
 import logo from "../image/NepGigs.png";
 
 import { FaArrowRight, FaArrowLeft, FaHeart, FaStar  } from "react-icons/fa";
-// import image0 from "../assets/image/image0.png";
-// import image1 from "../assets/image/image1.png";
 import image0 from "../image/image0.png"; 
 import image1 from "../image/image1.png";
 import image2 from "../image/image2.png";
@@ -235,9 +233,9 @@ const GigCard1 = ({ gig }) => (
 );
 
 const GigCarousel1 = () => (
-  <div className="carousel-container">
-    {gigs.map((gig) => (
-      <GigCard key={gig.id} gig={gig} />
+  <div className="carousel-container1">
+    {gigs1.map((gig) => (
+      <GigCard1 key={gig.id} gig={gig} />
     ))}
     <div className="carousel-indicators1">
       <span className="dot active1"></span>
@@ -296,17 +294,20 @@ const DiscoverPage = () => {
   return (
     <>
       <Header />
-      <CategoryNav/>
-      <ContinueBrowsing />
-      <GigCarousel />
-      <MostPopularGigs />
-      
-      <GigCarousel1 />
-      <Footer />
-      
-      
       <div className="body-content">
+        <CategoryNav/>
+
+        <ContinueBrowsing />
+        <GigCarousel />
+        <MostPopularGigs />
+      
+        <GigCarousel1 />
+        <Footer />
       </div>
+    
+      
+      
+      
     </>
   );
 };

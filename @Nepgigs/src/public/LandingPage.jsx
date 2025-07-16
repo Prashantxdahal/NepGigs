@@ -1,21 +1,13 @@
 import React from 'react';
-<<<<<<< HEAD
-import './LandingPage.css';
-
-import Landing from '@Nepgigs/src/assets/images/landing.png';
-import Card1 from '@Nepgigs/src/assets/images/Card1.png';
-import Card2 from '@Nepgigs/src/assets/images/Card2.png';
-import Card3 from '@Nepgigs/src/assets/images/Card3.png';
-import Card4 from '@Nepgigs/src/assets/images/Card4.png';
-=======
-import '@Nepgigs/css/Landingpage.css';
+import '../css/Landingpage.css';
 
 import Landing from "../assets/images/landing.png";
 import Card1 from '../assets/images/Card1.png';
 import Card2 from '../assets/images/Card2.png';
 import Card3 from '../assets/images/Card3.png';
 import Card4 from '../assets/images/Card4.png';
->>>>>>> 8e2f909 (Adding Gig Posting page)
+import logo from '../assets/images/logo.png';
+
 
 const LandingPage = () => {
   const services = [

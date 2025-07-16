@@ -1,0 +1,125 @@
+/* Container setup */
+.account-page {
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+/* Top navigation bar */
+.top-nav {
+  background-color: #dc2626;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo-section .logo {
+  height: 36px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 28px;
+  height: 28px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* Layout */
+.account-content {
+  display: flex;
+  padding: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.75rem 0;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Main content */
+.security-settings {
+  background: white;
+  padding: 2rem;
+  flex-grow: 1;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.security-settings h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.password-hint {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.update-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100px;
+}
+
+.update-btn:hover {
+  background-color: #b91c1c;
+}

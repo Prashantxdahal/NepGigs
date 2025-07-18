@@ -8,13 +8,16 @@ import ForgetPassword from './assets/public/ForgetPassword';
 
 import Account from './assets/public/AccountSetting.jsx';
 import AccountSetting from './assets/public/AccountSetting.jsx';
+import GigsPosting from './assets/public/GigsPosting.jsx';
 
 function App() {
   return (
     <div className="App">
       {/* <DiscoverPage /> */}
       {/* <ForgetPassword/> */}
-     <AccountSetting/>
+     {/* <AccountSetting/> */}
+     <GigsPosting/>
+     {/* <Gigs/> */}
     </div>
   );
 }

@@ -1,0 +1,197 @@
+/* GigDetailPage.css */
+
+.gig-detail-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header */
+.gig-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gig-logo {
+  height: 40px;
+  border-radius: 6px;
+}
+
+.gig-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.gig-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.gig-header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 26px;
+}
+
+/* Layout */
+.gig-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gig-left {
+  flex: 2;
+}
+
+.gig-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Author Info */
+.gig-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.author-initials {
+  background-color: #d32f2f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #080909;
+}
+
+.order-count {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Tag Buttons */
+.gig-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-button {
+  background-color: #ed0e0e;
+  color: #f3ecec;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: default;
+  transition: background-color 0.2s ease;
+}
+
+
+.gig-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.gig-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.gig-right {
+  flex: 1;
+}
+
+.pricing-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.package-features {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.package-features li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.price {
+  font-size: 24px;
+  color: #e81a1d;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.order-button {
+  background-color: #e81a1a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.order-button:hover {
+  background-color: #155ab6;
+}

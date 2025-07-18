@@ -4,6 +4,7 @@ import LandingPage from './public/LandingPage';
 import LoginPage from './public/LoginPage';
 import GigPosting from './public/GigPosting';
 import AccountSetting from './public/AccountSetting';
+import GigDetailPage from './public/GigDetailPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/gig-posting" element={<GigPosting />} />
         <Route path="/account-setting" element={<AccountSetting />} />
+        <Route path="/gig-detail" element={<GigDetailPage />} /> 
       </Routes>
     </Router>
   );

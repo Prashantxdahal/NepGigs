@@ -58,15 +58,38 @@
 /* Layout */
 .gig-main {
   display: flex;
-  justify-content: space-between;
-  padding: 32px;
-  gap: 32px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 32px;
+  height: calc(100vh - 80px); /* adjust if your header is a different height */
+  overflow: hidden;
+  gap: 0;
 }
 
+/* Left: scrollable content */
 .gig-left {
   flex: 2;
+  overflow-y: auto;
+  height: 100%;
+  padding-right: 24px;
+  /* Scrollbar will appear on the right edge of the page */
+}
+
+/* Remove scroll-wrapper or leave empty */
+.scroll-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+/* Right: sticky sidebar */
+.gig-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  align-self: flex-start;
+  position: sticky;
+  top: 32px; /* adjust for your header */
+  height: fit-content;
 }
 
 .gig-title {

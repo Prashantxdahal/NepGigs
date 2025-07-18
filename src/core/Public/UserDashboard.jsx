@@ -1,137 +1,130 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FiChevronDown } from "react-icons/fi";
+import { FaBell, FaEnvelope } from "react-icons/fa";
+import image from "../../assets/nepgigs.png";
 import "../../Style/UserDashboard.css";
 
-const NepGigs = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+const Dashboard = () => {
+  const [showForm, setShowForm] = useState(false);
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    // Handle form submission logic here
+    console.log("Profile Updated:", data);
+    setShowForm(false);
+    reset();
   };
 
   return (
-    <div className="nep-gigs-container">
-      <div className="sidebar">
-        <h1>NepGigs</h1>
+    <div className="dashboard-container">
+      {/* Header */}
+      <div className="navbar">
+        {/* Logo */}
+        <div className="navbar-left">
+          <div className="logo">
+            <img src={image} alt="NepGigs Logo" className="logo" />
+          </div>
 
-        <div className="section">
-          <h2>Recent Gigs</h2>
-          <ul>
+          {/* Navigation Links */}
+          <ul className="nav-links">
+            <li>Dashboard</li>
             <li>
-              Mobile APP UI Design <span>Client: Techlekh Nepal</span>
+              My Business <FiChevronDown size={14} />
             </li>
             <li>
-              Login Design Package <span>Client: Techpana</span>
+              Growth & Marketing <FiChevronDown size={14} />
             </li>
             <li>
-              Website Revamp <span>Client: 24 Seven Waterproofing</span>
+              Analytics <FiChevronDown size={14} />
             </li>
-            <li>
-              Mobile APP UI Design <span>Client: Techlekh Nepal</span>
-            </li>
-            <li>
-              Mobile APP UI Design <span>Client: Techlekh Nepal</span>
-            </li>
-            <li className="view-all">View All</li>
           </ul>
         </div>
 
-        <div className="section">
-          <h2>Completed</h2>
-          <ul>
-            <li>Completed</li>
-            <li>Completed</li>
-            <li>Completed</li>
-          </ul>
-        </div>
-
-        <div className="section">
-          <h2>Recent Notifications</h2>
-          <ul>
-            <li>
-              Login Successful <span>2 Hours Ago</span>
-            </li>
-            <li>
-              New Project Received <span>Just Now</span>
-            </li>
-            <li>
-              New Project Received <span>Just Now</span>
-            </li>
-          </ul>
+        {/* Icons */}
+        <div className="navbar-right">
+          <div className="icon">
+            <FaBell />
+            <span className="dot" />
+          </div>
+          <div className="icon">
+            <FaEnvelope />
+          </div>
+          <div className="avatar">
+            <img
+              src="https://i.pravatar.cc/40" // Placeholder image
+              alt="User"
+            />
+            <span className="status-dot" />
+          </div>
         </div>
       </div>
 
-      <div className="main-content">
-        <form onSubmit={handleSubmit(onSubmit)} className="gig-form">
-          <h2>Create New Gig</h2>
-
-          <div className="form-group">
-            <label htmlFor="gigTitle">Gig Title</label>
-            <input
-              id="gigTitle"
-              type="text"
-              {...register("gigTitle", { required: "Gig title is required" })}
-              placeholder="e.g. Mobile APP UI Design"
-            />
-            {errors.gigTitle && (
-              <span className="error">{errors.gigTitle.message}</span>
-            )}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="clientName">Client Name</label>
-            <input
-              id="clientName"
-              type="text"
-              {...register("clientName", {
-                required: "Client name is required",
-              })}
-              placeholder="e.g. Techlekh Nepal"
-            />
-            {errors.clientName && (
-              <span className="error">{errors.clientName.message}</span>
-            )}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="gigType">Gig Type</label>
-            <select
-              id="gigType"
-              {...register("gigType", { required: "Please select a gig type" })}
-            >
-              <option value="">Select gig type</option>
-              <option value="Mobile APP UI Design">Mobile APP UI Design</option>
-              <option value="Login Design Package">Login Design Package</option>
-              <option value="Website Revamp">Website Revamp</option>
-              <option value="Other">Other</option>
-            </select>
-            {errors.gigType && (
-              <span className="error">{errors.gigType.message}</span>
-            )}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="description">Description</label>
-            <textarea
-              id="description"
-              {...register("description")}
-              placeholder="Describe the gig details..."
-              rows="4"
-            />
-          </div>
-
-          <button type="submit" className="submit-btn">
-            Create Gig
+      {/* Welcome Banner */}
+      <div className="welcome-banner">
+        <h1>Welcome, Season Rai 👋</h1>
+        <p>
+          Find important messages, tips and links to helpful resources here:
+        </p>
+      </div>
+      {/* Profile and Stats */}
+      <div className="main-section">
+        <div className="profile-card">
+          <div className="avatar">SR</div>
+          <p>@seasonrai_087</p>
+          <button className="profile-btn" onClick={() => setShowForm(true)}>
+            Edit Profile
           </button>
-        </form>
+        </div>
+
+        <div className="stats">
+          <div className="stat-box">
+            2<br />
+            Active Orders
+          </div>
+          <div className="stat-box">
+            Rs.20,000
+            <br />
+            Total Earnings
+          </div>
+          <div className="stat-box">
+            8<br />
+            Completed Orders
+          </div>
+          <div className="stat-box">
+            2<br />
+            Active Gigs
+          </div>
+        </div>
+      </div>
+      {/* Recent Gigs */}
+      <div className="recent-gigs">
+        <div className="recent-header">
+          <h3>Recent Gigs</h3>
+          <a href="#">View All</a>
+        </div>
+        <ul className="gig-list">
+          {[
+            { title: "Mobile APP UI Design", client: "Techlekh Nepal" },
+            { title: "Login Design Package", client: "Techpana", blue: true },
+            { title: "Website Revamp", client: "24 Seven Waterproofing" },
+            { title: "Mobile APP UI Design", client: "Techlekh Nepal" },
+            { title: "Mobile APP UI Design", client: "Techlekh Nepal" },
+          ].map((gig, index) => (
+            <li key={index} className="gig-item">
+              <div>
+                <strong>{gig.title}</strong>
+                <br />
+                <span>Client: {gig.client}</span>
+              </div>
+              <span className={`status ${gig.blue ? "blue" : ""}`}>
+                Completed
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
-export default NepGigs;
+export default Dashboard;

@@ -64,9 +64,12 @@ const BuyDashboard = () => {
         <div className="navbar-left">
           <img src={image} alt="NepGigs Logo" className="logo" />
         </div>
-        <Link to="/dashboard" className="nav-item">
+        {/* <Link to="/Dashboard" className="nav-item">
           Dashboard
-        </Link>
+        </Link> */}
+        <a href="#" className="nav-item">
+          Dashboard
+        </a>
         <Link to="/my-business" className="nav-item">
           My Business
         </Link>

@@ -239,13 +239,16 @@ const NepGigsRequests = () => {
                 >
                   REJECT
                 </button>
-                <button
+                {/* <button
                   className="details-btn"
                   onClick={() => handleViewDetails(request.id)}
                   {...register(`details_${request.id}`)}
                 >
                   VIEW DETAILS
-                </button>
+                </button> */}
+                <Link to="/View Details" className="nav-item">
+                  VIEW DETAILS
+                </Link>
               </div>
             </div>
           ))}

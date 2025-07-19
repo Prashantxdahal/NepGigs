@@ -9,6 +9,8 @@ import ForgetPassword from './assets/public/ForgetPassword';
 import Account from './assets/public/AccountSetting.jsx';
 import AccountSetting from './assets/public/AccountSetting.jsx';
 import GigsPosting from './assets/public/GigsPosting.jsx';
+import RequestReceived from './assets/public/RequestReceived.jsx';
+import RequestForm from './assets/public/RequestForm.jsx';
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
       {/* <DiscoverPage /> */}
       {/* <ForgetPassword/> */}
      {/* <AccountSetting/> */}
-     <GigsPosting/>
-     {/* <Gigs/> */}
+     {/* <GigsPosting/> */}
+     {/* <RequestReceived/> */}
+     <RequestForm/>
     </div>
   );
 }

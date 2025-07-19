@@ -64,9 +64,6 @@ const BuyDashboard = () => {
         <div className="navbar-left">
           <img src={image} alt="NepGigs Logo" className="logo" />
         </div>
-        {/* <Link to="/Dashboard" className="nav-item">
-          Dashboard
-        </Link> */}
         <a href="#" className="nav-item">
           Dashboard
         </a>
@@ -81,7 +78,6 @@ const BuyDashboard = () => {
         </Link>
 
         <div className="user-actions">
-          <div className="notification-icon">🔔</div>
           <div className="message-icon">✉️</div>
           <div className="user-avatar">P</div>
         </div>

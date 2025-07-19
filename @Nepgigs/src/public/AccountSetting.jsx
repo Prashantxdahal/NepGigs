@@ -34,56 +34,15 @@ export default function AccountSetting() {
         <ul className="nav-links">
           <li>Dashboard</li>
           <li>My Business ▾</li>
-          <li>Growth & Marketing ▾</li>
+          <li>Growth And Marketing ▾</li>
           <li>Analytics ▾</li>
         </ul>
         <div className="nav-icons">
-          <span>🔔</span>
+          
           <span>✉️</span>
           <span>?</span>
           <span className="profile-avatar"></span>
         </div>
       </nav>
 
-      <div className="account-content">
-        {/* Sidebar */}
-        <aside className="sidebar">
-          <ul>
-            <li>Account</li>
-            <li className="active">Security</li>
-            <li>Notifications</li>
-          </ul>
-        </aside>
-
-        {/* Main Section */}
-        <section className="security-settings">
-          <h2>SET PASSWORD</h2>
-          <form onSubmit={handleUpdate}>
-            <div className="form-group">
-              <label>New Password</label>
-              <input
-                type="password"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-              />
-            </div>
-            <div className="form-group">
-              <label>Confirm Password</label>
-              <input
-                type="password"
-                value={confirm}
-                onChange={e => setConfirm(e.target.value)}
-              />
-            </div>
-            <p className="password-hint">
-              8 characters or longer. Combine upper and lowercase letters and numbers.
-            </p>
-            {error && <p style={{ color: "red" }}>{error}</p>}
-            {success && <p style={{ color: "green" }}>{success}</p>}
-            <button className="update-btn" type="submit">Update</button>
-          </form>
-        </section>
-      </div>
-    </div>
-    );
-    }
+     
